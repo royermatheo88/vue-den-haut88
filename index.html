@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mathéo, jeune passionné, propose des prises de vue par drone, photographies et vidéos aériennes, ainsi que la location de drone autour de Lachapelle-aux-Bois (Vosges).">
+    <meta name="keywords" content="drone Vosges, photo aérienne Vosges, drone Lachapelle-aux-Bois, photo drone Bains-les-Bains, photographie aérienne campagne">
+    <title>Vue d'en Haut | Drone & Photographie Aérienne dans les Vosges</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10,90 Q50,40 90,90 Z" fill="#2d5a27"/>
+                <path d="M30,90 Q60,60 90,90 Z" fill="#333333" opacity="0.5"/>
+                <circle cx="50" cy="30" r="6" fill="#333333"/>
+                <line x1="25" y1="20" x2="46" y2="28" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+                <line x1="75" y1="20" x2="54" y2="28" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="25" cy="20" r="3" fill="#2d5a27"/>
+                <circle cx="75" cy="20" r="3" fill="#2d5a27"/>
+            </svg>
+            <span>Vue d'en Haut</span>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#presentation">Qui suis-je ?</a></li>
+                <li><a href="#prestations">Prestations</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#portfolio">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Vue d'en Haut</h1>
+            <p class="slogan">La campagne vue autrement</p>
+            <a href="#prestations" class="btn">Découvrir mes prestations</a>
+        </div>
+    </section>
+
+    <section id="presentation" class="container">
+        <h2>Qui suis-je ?</h2>
+        <div class="text-center">
+            <p>Je m'appelle <strong>Mathéo</strong>.</p>
+            <p>Passionné de drone et de photographie aérienne, je propose des prises de vue dans le secteur de Lachapelle-aux-Bois et ses environs.</p>
+            <p>Mon objectif est de mettre en valeur les paysages, propriétés et événements grâce à des vues aériennes uniques.</p>
+            <p class="disclaimer"><em>Activité réalisée par un jeune particulier passionné de drone.</em></p>
+        </div>
+    </section>
+
+    <section id="prestations" class="container bg-light">
+        <h2>Prestations photo aériennes</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Forfait Découverte</h3>
+                <p class="price">10 €</p>
+                <p>environ 10 photos</p>
+            </div>
+            <div class="card highlight">
+                <h3>Forfait Classique</h3>
+                <p class="price">25 €</p>
+                <p>environ 30 photos</p>
+            </div>
+            <div class="card">
+                <h3>Forfait Premium</h3>
+                <p class="price">45 €</p>
+                <p>photos illimitées</p>
+            </div>
+        </div>
+        <p class="text-center small-text">Prix indicatifs pouvant évoluer selon la demande et la complexité du projet.</p>
+        
+        <hr class="separator">
+
+        <h2>Vidéo aérienne</h2>
+        <div class="text-center">
+            <p>Vidéo simple d'environ 3 minutes.</p>
+            <p><strong>Tarif indicatif : 50 €</strong></p>
+            <p>Sur devis selon la demande.</p>
+        </div>
+    </section>
+
+    <section id="location" class="container">
+        <h2>Location du drone</h2>
+        <div class="location-content">
+            <div class="drone-info">
+                <h3>Modèle : DJI Neo Fly More Combo</h3>
+                <ul class="tarifs-list">
+                    <li><strong>1 jour :</strong> 25 €</li>
+                    <li><strong>Week-end :</strong> 50 €</li>
+                    <li><strong>Semaine :</strong> 130 €</li>
+                </ul>
+                <p><strong>Caution :</strong> 300 €</p>
+            </div>
+            <div class="location-details">
+                <h3>Informations</h3>
+                <ul>
+                    <li>Retrait possible à Lachapelle-aux-Bois</li>
+                    <li>Conditions communiquées avant la location</li>
+                    <li>Document explicatif fourni</li>
+                    <li><em>Activité réalisée par un particulier</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container bg-light">
+        <h2>Galerie</h2>
+        
+        <div class="portfolio-grid">
+            <img src="photo1.jpg" alt="Prise de vue aérienne Vosges - Photo 1" onerror="this.style.display='none';">
+            <img src="photo2.jpg" alt="Prise de vue aérienne Vosges - Photo 2" onerror="this.style.display='none';">
+            <img src="photo3.jpg" alt="Prise de vue aérienne Vosges - Photo 3" onerror="this.style.display='none';">
+            <img src="photo4.jpg" alt="Prise de vue aérienne Vosges - Photo 4" onerror="this.style.display='none';">
+        </div>
+
+        <div id="portfolio-notice" class="portfolio-empty text-center" style="display: none;">
+            <p>"Le portfolio est actuellement en cours de création."</p>
+            <p>"De nouvelles photos aériennes seront bientôt disponibles."</p>
+        </div>
+    </section>
+
+    <section id="zone" class="container">
+        <h2>Zone d'activité</h2>
+        <div class="zone-content">
+            <div class="map-placeholder">
+                <div class="circle">
+                    <span class="center-point">Lachapelle-aux-Bois</span>
+                    <span class="radius-text">Rayon de 15 km</span>
+                </div>
+            </div>
+            <div class="zone-text text-center">
+                <p>Déplacements possibles dans un rayon d'environ 15 km autour de Lachapelle-aux-Bois.</p>
+                <p><strong>Villes principales :</strong> Bains-les-Bains, Xertigny, Les Voivres...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="avis" class="container bg-light">
+        <h2>Avis</h2>
+        <p class="text-center small-text disclaimer"><em>"Avis d'exemple en attendant les premiers retours clients."</em></p>
+        <div class="cards-grid">
+            <div class="avis-card">
+                <p>"Superbes photos de ma propriété, Mathéo est très pro et appliqué."</p>
+                <strong>- Jean D.</strong>
+            </div>
+            <div class="avis-card">
+                <p>"La location s'est très bien passée. Explications claires, matériel au top."</p>
+                <strong>- Sophie L.</strong>
+            </div>
+            <div class="avis-card">
+                <p>"Une vue incroyable sur notre événement de famille, merci !"</p>
+                <strong>- Marc P.</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container">
+        <h2>Foire Aux Questions</h2>
+        <div class="faq-item">
+            <h3>Sous combien de temps répondez-vous ?</h3>
+            <p>Je fais mon maximum pour répondre sous 72 heures mais cela n'est pas garanti.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Les prestations dépendent-elles de la météo ?</h3>
+            <p>Oui. Les vols peuvent être reportés en fonction des conditions météorologiques.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Êtes-vous un professionnel ?</h3>
+            <p>Non. Activité réalisée par un jeune particulier passionné de drone.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container bg-light text-center">
+        <h2>Contact</h2>
+        <p>Pour toute demande de prestation ou de location, n'hésitez pas à me contacter directement :</p>
+        <div class="contact-info">
+            <p>📞 <strong>Téléphone :</strong> 07 45 02 84 78</p>
+            <p>✉️ <strong>Mail :</strong> <a href="mailto:royermatheo839@gmail.com">royermatheo839@gmail.com</a></p>
+            <p>📍 <strong>Localisation :</strong> Lachapelle-aux-Bois (88240)</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Vue d'en Haut</strong></p>
+            <p>La campagne vue autrement</p>
+            <p class="small-text">Activité réalisée par un jeune particulier passionné de drone.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav-menu");
+            nav.classList.toggle("active");
+        }
+        
+        // Ce script vérifie si des images s'affichent. Si la liste est vide ou non trouvée, il montre ton message d'attente.
+        window.addEventListener('load', function() {
+            var imgs = document.querySelectorAll('.portfolio-grid img');
+            var visibleCount = 0;
+            imgs.forEach(function(img) {
+                if (img.style.display !== 'none' && img.complete && img.naturalWidth > 0) {
+                    visibleCount++;
+                }
+            });
+            if (visibleCount === 0) {
+                document.getElementById('portfolio-notice').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
